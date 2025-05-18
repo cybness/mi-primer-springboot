@@ -46,7 +46,7 @@ public class UserService {
 
         try {
             Department department = restTemplate.getForObject(
-                    "http://localhost:9001/departments/" + user.getDepartmentId(),
+                    "http://departamentos/departments/" + user.getDepartmentId(),
                     Department.class
             );
             vo.setDepartment(department);
